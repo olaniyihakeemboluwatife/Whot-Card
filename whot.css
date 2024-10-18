@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    background-color: brown;
+    width: 350px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container h1 {
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Whot Card Design */
+.card-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.topleft, .bottomright {
+    position: absolute;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.topleft {
+    top: 10px;
+    left: 10px;
+}
+
+.bottomright {
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(180deg);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.whot-symbol {
+    width: 150px;
+    height: 150px;
+    background-color: white;  /* White background for visibility */
+    padding: 20px 40px;       /* Add padding for the rectangular shape */
+    border-radius: 10px;      /* Optional: Round corners slightly for style */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow for effect */
+}
+.mini-whot-symbol {
+    width: 5px;
+    height: 5px;
+    top: 10px;
+    left: 90px;
+    background-color: white;  /* White background for visibility */
+    padding: 10px 10px;       /* Add padding for the rectangular shape */
+    /* border-radius: 10px;      Optional: Round corners slightly for style */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow for effect */
+}
+
+/* Flip Button Style */
+.flip-button {
+    background-color: green;
+    padding: 15px 30px;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 280px;
+        height: 400px;
+    }
+
+    .container h1 {
+        font-size: 60px;
+    }
+
+    .topleft, .bottomright {
+        font-size: 80px;
+    }
+
+    .whot-symbol {
+        width: 105px;
+        height: 105px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 240px;
+        height: 350px;
+    }
+
+    .container h1 {
+        font-size: 50px;
+    }
+
+    .topleft, .bottomright {
+        font-size: 60px;
+    }
+
+    .whot-symbol {
+        width: 90px;
+        height: 90px;
+    }
+}
